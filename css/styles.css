@@ -819,6 +819,7 @@ placeholder {
 }
 
 .block-policy {
+  display: flex;
   margin-bottom: 30px;
 }
 
