@@ -780,7 +780,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
-  color: var(--placeholder-color);
+   color: var(--heading-text-color);
 }
 placeholder {
   color: var(--placeholder-color);
@@ -851,7 +851,7 @@ input[type="checkbox"] {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: var(--placeholder-color);
+  color: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
   padding: 14px 42px;
   transition: border-color 250ms var(--timing-function);
@@ -861,7 +861,7 @@ input[type="checkbox"] {
   position: relative;
 }
 
-.input-name:focus,
+/* .input-name:focus,
 .input-name:hover,
 .input-mail:focus,
 .input-mail:hover,
@@ -871,12 +871,12 @@ input[type="checkbox"] {
 .modal-text:hover {
   border-color: var(--click-color);
   cursor: pointer;
-}
+} */
 
 .icon-person {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 22px;
   transform: translate(-50%, -50%);
   fill: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
@@ -889,7 +889,7 @@ input[type="checkbox"] {
 .icon-phone {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 22px;
   transform: translate(-50%, -50%);
   fill: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
@@ -902,7 +902,7 @@ input[type="checkbox"] {
 .icon-blackenvelope {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 22px;
   transform: translate(-50%, -50%);
   fill: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
@@ -926,8 +926,8 @@ input[type="checkbox"] {
   align-items: center;
   width: 16px;
   height: 15px;
-  border-color: var(--heading-text-color);
-  border: 2px solid;
+  margin-left: 12px;
+  border: 2px solid var(--heading-text-color);
   border-radius: 2px;
   transition: background-color 250ms var(--timing-function),
     background-image 250ms var(--timing-function);
@@ -966,7 +966,7 @@ input[type="checkbox"] {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--footer-color);
-  color: var(--contact-footer-color);
+  color: var(--main-bg-color);
   padding: 15px 16px;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -974,9 +974,7 @@ input[type="checkbox"] {
   transition: border 250ms var(--timing-function);
 }
 
-.footer-input:focus {
-  border-color: var(--click-color);
-}
+
 
 .footer-btn-submit {
   display: flex;
