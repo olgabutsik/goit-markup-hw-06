@@ -781,9 +781,15 @@ textarea {
   border-radius: 4px;
   margin-top: 4px;
    color: var(--heading-text-color);
+   transition: border 250ms var(--timing-function);
+   outline: none;
 }
 placeholder {
   color: var(--placeholder-color);
+}
+
+.modal-text:focus {
+  border:  1px solid var(--click-color);
 }
 
 .modal-form {
@@ -855,23 +861,20 @@ input[type="checkbox"] {
   transition: fill 250ms var(--timing-function);
   padding: 14px 42px;
   transition: border-color 250ms var(--timing-function);
+  outline: none;
+}
+
+.input-name:focus,
+.input-mail:focus,
+.input-tel:focus {
+border:  1px solid var(--click-color);
 }
 
 .input-block {
   position: relative;
 }
 
-/* .input-name:focus,
-.input-name:hover,
-.input-mail:focus,
-.input-mail:hover,
-.input-tel:focus,
-.input-tel:hover,
-.modal-text:focus,
-.modal-text:hover {
-  border-color: var(--click-color);
-  cursor: pointer;
-} */
+
 
 .icon-person {
   position: absolute;
@@ -920,6 +923,12 @@ input[type="checkbox"] {
   display: flex;
 }
 
+.label-policy:hover  {
+cursor: pointer;
+}
+
+
+
 .checkbox-icon {
   display: flex;
   justify-content: center;
@@ -946,6 +955,7 @@ input[type="checkbox"] {
 
 .agree {
   padding-left: 7px;
+  cursor: pointer;
 }
 
 .contract-terms {
@@ -972,6 +982,11 @@ input[type="checkbox"] {
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   transition: border 250ms var(--timing-function);
+outline: none;
+}
+
+.footer-input:focus {
+  border:  1px solid var(--click-color);
 }
 
 
